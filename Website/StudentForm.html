@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hogwarts University</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+<style>  
+   body 
+   {
+      background: url(images/wallpaper.jpg);
+      background-size: cover;
+      background-position: center;
+   }
+   #table-scroll 
+   {
+      width:100%;
+      overflow:auto;  
+      margin-top:20px;
+   }   
+   table 
+   {
+      width:300%;
+   }
+   table, th, td 
+   {
+      border: 1px solid black;
+      border-collapse: collapse;
+   }
+   th, td 
+   {
+      padding: 15px;
+      text-align: center; 
+   } 
+   table#t01 tr:nth-child(even) 
+   {
+      background-color: #eee; 
+   }
+   table#t01 tr:nth-child(odd) 
+   {
+      background-color: #fff;
+   }
+   table#t01 th 
+   {
+      background-color: black;
+      color: white;
+   } 
+</style>
+</head>
+<body class="single-page">
+<form action="Student.php" method="post">
+   <div class="contact-form">
+      <div class="container">
+         <div class="row align-items-center justify-content-center">
+		    <br><br><br><br><br><br><br><br>
+		    <img src="images/student.jpg" width="250" height="110">
+		    <div class="col-12 col-md-8">
+			   <input type="text" placeholder="Student-ID" name="StudentID">
+			   <div class="row align-items-center justify-content-center">
+			      <a class="d-inline-block button gradient-bg" href="#">GO</a>
+			   </div>
+			</div>
+            <div class="col-12">
+		       <br>
+               <div class="opening-hours h-100">
+                  <h2 class="d-flex align-items-center">Student List</h2>
+                  <ul class="p-0 m-0">
+				   <div id="table-scroll">
+                   <table id="t01">
+                      <tr>
+                         <th>Student-ID</th>
+                         <th>Firstname</th> 
+                         <th>Lastname</th>	
+                         <th>Faculty</th> 
+                         <th>Department</th>	
+	                     <th>Section</th>	
+	                     <th>Program</th>		
+                         <th>Address</th>	
+	                     <th>Email</th>	
+	                     <th>Phone Number</th>						 
+                      </tr>
+                      <tr>
+                         <td><input type="text" name="StudentID1" value="60070503444"></td>
+                         <td><input type="text" name="S_Firstname1" value="Putthiwat"></td>
+	                     <td><input type="text" name="S_Lastname1" value="Chalermvongsavej"></td>
+	                     <td><input type="text" name="Faculty1" value="Engineering"></td>
+                         <td><input type="text" name="Department1" value="Computer Engineering"></td>
+                         <td><input type="text" name="Section1" value="A"></td>
+	                     <td><input type="text" name="Program1" value="International"></td>
+	                     <td><input type="text" name="S_Address1" value="on the Earth"></td>
+	                     <td><input type="text" name="S_Email1" value="shiratasa@yahoo.com"></td>
+	                     <td><input type="text" name="S_PhoneNumber1" value="0123456789"></td>
+                     </tr>
+                     <tr>
+                         <td><input type="text" name="StudentID2" value="60070503404"></td>
+                         <td><input type="text" name="S_Firstname2" value="Krittapas"></td>
+	                     <td><input type="text" name="S_Lastname2" value="Sukkhasame"></td>
+	                     <td><input type="text" name="Faculty2" value="Engineering"></td>
+                         <td><input type="text" name="Department2" value="Computer Engineering"></td>
+                         <td><input type="text" name="Section2" value="A"></td>
+	                     <td><input type="text" name="Program2" value="International"></td>
+	                     <td><input type="text" name="S_Address2" value="on the Earth"></td>
+	                     <td><input type="text" name="S_Email2" value="sunboi@yahoo.com"></td>
+	                     <td><input type="text" name="S_PhoneNumber2" value="9638527410"></td>
+                     </tr>
+                     <tr> 
+                         <td><input type="text" name="StudentID3" value="60070503442"></td>
+                         <td><input type="text" name="S_Firstname3" value="Pitchanat"></td>
+	                     <td><input type="text" name="S_Lastname3" value="Kanjanajitti"></td>
+	                     <td><input type="text" name="Faculty3" value="Engineering"></td>
+                         <td><input type="text" name="Department3" value="Computer Engineering"></td>
+                         <td><input type="text" name="Section3" value="A"></td>
+	                     <td><input type="text" name="Program3" value="International"></td>
+	                     <td><input type="text" name="S_Address3" value="on the Earth"></td>
+	                     <td><input type="text" name="S_Email3" value="godofman@yahoo.com"></td>
+	                     <td><input type="text" name="S_PhoneNumber3" value="7896054123"></td>
+                     </tr>
+                     <tr>
+                         <td><input type="text" name="StudentID4" value="60070503500"></td>
+                         <td><input type="text" name="S_Firstname4" value="Sirapitch"></td>
+	                     <td><input type="text" name="S_Lastname4" value="Limpanithiphat"></td>
+	                     <td><input type="text" name="Faculty4" value="Engineering"></td>
+                         <td><input type="text" name="Department4" value="Computer Engineering"></td>
+                         <td><input type="text" name="Section4" value="A"></td>
+	                     <td><input type="text" name="Program4" value="International"></td>
+	                     <td><input type="text" name="S_Address4" value="on the Earth"></td>
+	                     <td><input type="text" name="S_Email4" value="cooldude@yahoo.com"></td>
+	                     <td><input type="text" name="S_PhoneNumber4" value="7530159842"></td>
+                     </tr>
+				  </div>	 
+                  </table>
+				  <br><br>	
+                  </ul>
+				  <div class="row align-items-center justify-content-center">
+				     <input type="submit" value="CANCEL" onclick="goHome()" class="d-inline-block button gradient-bg">
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					 <input type="submit" value="EDIT" onclick="goHome()" class="d-inline-block button gradient-bg">
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					 <input type="submit" value="SAVE" onclick="goHome()" class="d-inline-block button gradient-bg">
+				  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <p class="mb-4 text-center">CPE231: Student Registration 1</p>
+</form>            
+</body>
+</html>

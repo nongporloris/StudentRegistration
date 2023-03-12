@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Hogwarts University</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/swiper.min.css">
+   <link rel="stylesheet" href="style.css">
+<style>
+   body 
+   {
+      background: url(images/footer-bg.png);
+      background-size: cover;
+   }
+   .boxed 
+   {
+      margin: auto;
+      box-sizing: border-box;
+      width: 50%;
+      border: double black 5px;
+      padding: 5px;
+      background: url(images/Untitled.png);
+      background-position: center;
+      background-size: cover;
+   }
+</style>
+</head>
+<body class="single-page">
+<form action="Subject.php" method="post">
+   <div class="contact-form">
+      <div class="container">
+         <div class="row align-items-center justify-content-center">
+		    <br><br><br><br><br><br><br><br>
+		    <img src="images/subject.jpg" width="250" height="110">
+            <div class="col-12">
+		       <div class="boxed">
+                  <br><br>
+                  <p style="text-align:center;">
+                     <b>Payment Type:</b>
+                     <br><br>
+                     <input type="radio" name="PayType" value="BillPayment">Bill Payment
+                     &nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="radio" name="PayType" value="CreditCard">Credit Card
+                     <br><br><br><br><br>
+                     <b>Card Type:</b>
+                     <br><br>
+                     <input type="radio" name="CardType" value="Visa"><img src="images/visa.png" width="40" height="25">
+                     &nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="radio" name="CardType" value="MasterCard"><img src="images/master.png" width="40" height="25">
+                     &nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="radio" name="CardType" value="JCB"><img src="images/jcb.png" width="40" height="25">
+                     <br><br><br><br><br>
+                     <input type="number" placeholder="Card Number" name="CardNumber">
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input type="number" placeholder="CCV Number" name="CCV_Number">
+                  </p>
+                  <br><br>
+               </div>
+               <br><br>
+		       <div class="row align-items-center justify-content-center">
+			      <input type="submit" value="CANCEL" onclick="goHome()" class="d-inline-block button gradient-bg">
+				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <input type="submit" value="VIEW BILL" onclick="goHome()" class="d-inline-block button gradient-bg">
+				  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <input type="submit" value="CONFIRM" onclick="goHome()" class="d-inline-block button gradient-bg">
+			   </div>	
+            </div>
+         </div>
+      </div>
+   </div>
+   <p class="mb-4 text-center">CPE231: Student Registration 1</p>
+</form>            
+</body>
+</html>

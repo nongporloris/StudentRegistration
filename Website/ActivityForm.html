@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hogwarts University</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+<style>  
+   body 
+   {
+      background: url(images/wallpaper.jpg);
+      background-size: cover;
+      background-position: center;
+   } 
+   table 
+   {
+      width:100%;
+   }
+   table, th, td 
+   {
+      border: 1px solid black;
+      border-collapse: collapse;
+   }
+   th, td 
+   {
+      padding: 15px;
+      text-align: center; 
+   } 
+   table#t01 tr:nth-child(even) 
+   {
+      background-color: #eee; 
+   }
+   table#t01 tr:nth-child(odd) 
+   {
+      background-color: #fff;
+   }
+   table#t01 th 
+   {
+      background-color: black;
+      color: white;
+   } 
+</style>
+</head>
+<body class="single-page">
+<form action="Activity.php" method="post">
+   <div class="contact-form">
+      <div class="container">
+         <div class="row align-items-center justify-content-center">
+		    <br><br><br><br><br><br><br><br>
+		    <img src="images/activity.jpg" width="250" height="110">
+            <div class="col-12">
+		       <br>
+               <div class="opening-hours h-100">
+                  <h2 class="d-flex align-items-center">Activity Registration</h2>
+                  <ul class="p-0 m-0">
+                   <table id="t01">
+                      <tr>
+                         <th>Activity-ID</th>
+                         <th>Activity Name</th> 
+                         <th>TeacherID</th>	  
+                      </tr>
+                      <tr>
+                         <td><input type="text" name="ActivityID" value="AS-01P"></td>
+                         <td><input type="text" name="ActivityName" value="Modern Technology"></td>
+	                     <td><input type="number" name="StudentID" value="1"></td>
+                     </tr>
+                     
+                  </table>
+				  <br><br>
+				  <div class="row align-items-center justify-content-center">
+				     <input type="button" value="CANCEL" onclick="window.location='http://localhost/Website/HomeForm.html'" class="d-inline-block button gradient-bg">
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					 <input type="submit" value="CONFIRM" onclick="goHome()" class="d-inline-block button gradient-bg">
+				  </div>	
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <p class="mb-4 text-center">CPE231: Student Registration 1</p>
+</form>            
+</body>
+</html>
